@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+        .hero {
+            text-align: center;
+            background: url('images/gujarat-hero.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 200px 20px;
+            position: relative;
+            margin-top: 70px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background: #e68900;
+        }
+        .destination-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px 20px;
+            justify-content: center;
+        }
+        .destination-card {
+            flex: 1 1 calc(33% - 20px);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .destination-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .destination-card:hover {
+            transform: scale(1.05);
+        }
+        .about-us {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+            margin-top: 50px;
+        }
+        .about-us h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .about-us p {
+            font-size: 1.2em;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #e3f2fd;
+            margin-top: 50px;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact button {
+            background: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><b>Gujarat Tourism</b></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="https://www.indiantempletour.com/blogs/wp-content/uploads/2022/10/gujarat.jpeg" alt="Gujarat Tourism">
+        <h1 style="color: black;"> Explore Gujarat</h1>
+        <p style="color: black;"> Discover the vibrant culture and rich history of Gujarat, India.</p>
+        <button>Browse Destinations</button>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2><center> Featured Destinations in Gujarat </center></h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://st1.photogallery.ind.sh/wp-content/uploads/indiacom/aerial-view-of-spectacular-atal-bridge-202208-1661589659.jpg" alt="Ahmedabad">
+                <h3>Ahmedabad</h3>
+                <p>Explore Sabarmati Ashram, Jama Masjid, and the bustling markets.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/dwarkadhish-temple/Dwarkadhish-Temple-1.jpg" alt="Dwarka">
+                <h3>Dwarka</h3>
+                <p>Visit the Dwarkadhish Temple, believed to be the ancient kingdom of Lord Krishna.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.soutickets.in/assets/images/banner_home_img.jpg" alt="Statue of Unity">
+                <h3>Statue of Unity</h3>
+                <p>The world's tallest statue, dedicated to Sardar Vallabhbhai Patel.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://media.istockphoto.com/id/108126645/photo/asiatic-lion.jpg?s=612x612&w=0&k=20&c=H8PS89PwgyFo2yApuLSSxOztq62teK-NoOPxM9fT114=" alt="Gir National Park">
+                <h3>Gir National Park</h3>
+                <p>The last refuge of the Asiatic Lion, experience thrilling wildlife safaris.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.rannutsavgujarat.in/thumb/media/0x0/fLwcdhrZsXKnmCSw6YFJN7jFE5RtP9zT.jpg" alt="Rann of Kutch">
+                <h3>Rann of Kutch</h3>
+                <p>A vast salt desert offering mesmerizing landscapes and cultural performances.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Gujarat Tourism</h2>
+        <p>Gujarat is rich in culture, history, and natural beauty, offering diverse experiences for travelers.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form><br
+        <p>Phone: 123-456-7890 | Email: info@gujarattourism.com | Address: Gujarat Tourism Office, Gandhinagar</p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Gujarat Tourism. All Rights Reserved.</p><br
+        <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p><br
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
